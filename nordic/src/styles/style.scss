@@ -8,8 +8,11 @@
 
 body {
     background-color: $black-normal;
-    overflow: hidden;
     position: relative;
-    height: 100vh;
     width: 100vw;
+
+    background-image: url("../assets/nordic-2.svg");
+
+    overflow: hidden;
 }
+
