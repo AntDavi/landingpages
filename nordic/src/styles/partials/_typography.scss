@@ -1,0 +1,71 @@
+h1, h2, a {
+    text-decoration: none;
+    color: $white-normal;
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 100%;
+}
+
+h2 {
+    font-size: $gap-6;
+}
+
+h1 {
+    font-size: $gap-9;
+}
+
+p {
+    color: $white-normal;
+
+    font-size: $gap-2;
+
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+
+    line-height: 150%;
+
+    margin-top: $gap-2;
+}
+
+.link {
+    padding: $gap-1 $gap-3;
+    font-size: $gap-2;
+    margin-left: $gap-2;
+
+    position: relative;
+
+    &::after {
+        content: '';
+
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+
+        transform: translate(20%, -50%);
+        
+        transition: .5s ease;
+
+        width: 0%;
+        height: 2px;
+        background: $white-light;
+    }
+
+    &:hover {
+        opacity: .8;
+
+        &::after {
+            width: 70%;
+        }
+    }
+}
+
+.btn-primary {
+    background: linear-gradient(254.12deg, #5CC8FF 0%, #47A1CC 100%);
+
+    padding: $gap-2 $gap-5;
+    border-radius: 4px;
+
+    margin-top: $gap-3;
+}
