@@ -116,5 +116,7 @@ body {
   position: relative;
   width: 100vw;
   background-image: url("../assets/nordic-2.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
   overflow: hidden;
 }/*# sourceMappingURL=style.css.map */
