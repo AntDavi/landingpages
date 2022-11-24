@@ -1,4 +1,4 @@
-.hero {
+.s-hero {
     padding-top: 16.4rem;
     padding-bottom: 10.3rem;
 
@@ -97,7 +97,7 @@
             .play {
                 position: absolute;
                 left: 2.4rem;
-                bottom: 3.2rem;
+                bottom: 2.4rem;
             }
         }
 
@@ -141,5 +141,65 @@
                 }
             }
         }
+    }
+}
+
+.s-story {
+    padding-top: 16rem;
+    padding-bottom: 8rem;
+
+    background-image: url('../assets/bg-story.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 80rem;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .left {
+        width: 100%;
+        max-width: 50%;
+
+        h2 {
+            margin: 2.4rem 0;
+
+            font-weight: 700;
+            font-size: 4.8rem;
+            line-height: 130%;
+        }
+
+        p {
+            font-weight: 400;
+            font-size: 1.8rem;
+            line-height: 160%;
+            color: #BDC2CB;
+        }
+
+        .productor {
+            display: flex;
+            
+            margin-top: 4.2rem;
+
+            p {
+                max-width: 32.4rem;
+                margin-left: 4.6rem;
+
+                font-weight: 400;
+                font-size: 1.6rem;
+                line-height: 160%;
+
+                color: #FFFFFF;
+            }
+        }
+    }
+
+    .right {
+        width: 100%;
+        max-width: 50%;
     }
 }

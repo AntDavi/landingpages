@@ -11,6 +11,10 @@ header {
         align-items: center;
         justify-content: space-between;
 
+        .logo {
+            margin-left: 20rem;
+        }
+
         .plataform {
             display: flex;
             align-items: center;
@@ -32,6 +36,7 @@ header {
                     font-weight: 600;
                     font-size: 1.6rem;
                     line-height: 1.7rem;
+                    border-radius: 0.4rem;
                 }
             }
         }
