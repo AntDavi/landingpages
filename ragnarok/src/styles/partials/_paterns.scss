@@ -5,9 +5,9 @@
     span {
         font-size: 2rem;
         font-weight: 500;
-        line-height: 2.2rem;
+        line-height: $gap-3;
 
-        margin-left: 1.6rem;
+        margin-left: $gap-2;
     }
 }
 
@@ -18,7 +18,7 @@ h1 {
 }
 
 h2 {
-    font-size: 4.8rem;
+    font-size: $gap-6;
     font-weight: 700;
     line-height: 130%;
 }
@@ -69,7 +69,7 @@ p {
     .card-info {
         h3 {
             font-weight: 700;
-            font-size: 1.8rem;
+            font-size: $gap-6;
             line-height: 2rem;
             margin-bottom: 0.8rem;
         }

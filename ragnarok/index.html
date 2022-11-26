@@ -14,8 +14,13 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./src/styles/style.css">
     
-    <title>God of War Ragnarok</title>
+    <!-- Detalhes -->
+    <title>God of War Ragnarök</title>
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <!-- Animação -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -36,7 +41,7 @@
 
     <section class="s-hero">
         <div class="container">
-            <div class="left">
+            <div class="left" data-aos="fade-right">
                 <h3 class="subtitle">
                     <img src="./src/assets/bullets.svg" alt="Bullet">
                     <span>Lançamento dia 09/11/2022</span>
@@ -50,7 +55,7 @@
                     </div>
                 </h3>
             </div>
-            <div class="right">
+            <div class="right" data-aos="fade-left" data-aos-delay="200">
                 <span>Assista aos trailers</span>
                 <button>
                     <img src="./src/assets/thumbnail.gif" alt="Trailer" class="thumbnail">
@@ -108,6 +113,17 @@
             </div>
         </div>
     </section>
+
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            easing: "ease-out-quart",
+            duration: 1000,
+            once: true
+        });
+    </script>
 </body>
 
 </html>
