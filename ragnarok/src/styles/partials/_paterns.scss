@@ -35,10 +35,9 @@ p {
     width: 100%;
     max-width: 38.4rem;
 
-
     .card-image {
         width: 100%;
-        height: 52rem;
+        height: 48rem;
         position: relative;
 
         display: flex;
@@ -49,14 +48,17 @@ p {
         overflow: hidden;
 
         img {
-            transition: transform .5s ease;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .3s ease;
         }
 
         button {
             position: absolute;
             bottom: 0;
             padding: 1.6rem 3.2rem;
-            background: #3265EA;
+            background: $primary-blue;
     
             font-weight: 700;
             font-size: 1.8rem;
@@ -69,7 +71,7 @@ p {
     .card-info {
         h3 {
             font-weight: 700;
-            font-size: $gap-6;
+            font-size: 1.8rem;
             line-height: 2rem;
             margin-bottom: 0.8rem;
         }
