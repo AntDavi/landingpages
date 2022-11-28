@@ -8,6 +8,7 @@ var swiper = new Swiper(".slide-characters", {
     slidesPerView: 3.5,
     spaceBetween: 30,
     freeMode: true,
+    grabCursor: true,
     breakpoints: {
         320: { //da resolução de 320px pra cima acontece algo
             slidesPerView: 1.1,
