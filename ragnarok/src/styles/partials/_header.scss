@@ -41,4 +41,22 @@ header {
             }
         }
     }
+
+    @media screen and (max-width: 991px) {
+        height: 7rem;
+        .plataform {
+            span {
+                display: none;
+            }
+        }
+        .sony {
+            display: none;
+        }
+        .container {
+            .logo {
+                margin-left: 0rem;
+                width: 140px;
+            }
+        }
+    }
 }

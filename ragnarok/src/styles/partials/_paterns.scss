@@ -9,12 +9,31 @@
 
         margin-left: $gap-2;
     }
+
+    @media screen and (max-width: 1200px) {
+        
+        span {
+            font-size: 1.8rem;
+        }
+    }
+    @media screen and (max-width: 991px) {
+        justify-content: center;
+    }
+    @media screen and (max-width: 560px) {
+        span {
+            font-size: 1.6rem;
+        }
+    }
 }
 
 h1 {
     font-size: 12.4rem;
     font-weight: 700;
     line-height: 97.5%;
+
+    @media screen and (max-width: 1200px) {
+        font-size: 10rem;
+    }
 }
 
 h2 {
