@@ -37,3 +37,20 @@ footer {
         }
     }
 }
+
+@media screen and (max-width: 991px) {
+    footer {
+        padding: 3rem;
+        .container {
+            .links {
+                align-items: center;
+                flex-direction: column;
+                gap: $gap-8;
+            }
+            p {
+                margin-top: $gap-8;
+            }
+        }
+
+    }
+}

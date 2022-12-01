@@ -183,13 +183,12 @@
             }
 
             img {
-                width: 100%;
+                max-width: 120px;
             }
         }
     }
 
     .right {
-        width: 100%;
         max-width: 50%;
 
         .kratos-atreus {
@@ -298,6 +297,9 @@
             }
         }
     }
+    .s-characters {
+        padding: 6rem 0;
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -337,6 +339,17 @@
         .left {
             h2 {
                 max-width: 95%;
+            }
+        }
+    }
+    .s-characters {
+        .description {
+            flex-direction: column;
+            align-items: center;
+            .left {
+                max-width: 100%;
+                text-align: center;
+                margin-bottom: 4rem;
             }
         }
     }
@@ -401,6 +414,34 @@
         }
         .kratos-atreus {
             margin-bottom: 1.6rem;
+        }
+    }
+    .s-characters {
+        padding: 4rem 0;
+        .description {
+            .left {
+                h2 {
+                    font-size: 3rem;
+                }
+                p {
+                    font-size: 1.6rem;
+                }
+            }
+            .right {
+                flex-direction: column;
+                align-items: center;
+                .text {
+                    img {
+                        margin: 0 auto;
+                    }
+                    span {
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+        .slide-characters {
+            margin-top: 4rem;
         }
     }
 }
