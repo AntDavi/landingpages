@@ -12,8 +12,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Poppins:wght@400;500&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -22,29 +23,43 @@
     <div class="nordic-3"></div>
 
     <header class="menu">
-        <nav>
-            <div class="logo">
-                <img src="./src/assets/logo.svg" alt="" onload="SVGInject(this)">
-            </div>
-            <div class="menu-content">
-                <a href="" class="link">Home</a>
-                <a href="" class="link">Services</a>
-                <a href="" class="link">Contracts</a>
-            </div>
-        </nav>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="./src/assets/logo.svg" alt="" onload="SVGInject(this)">
+                </div>
+                <div class="menu-content">
+                    <a href="" class="link">Home</a>
+                    <a href="" class="link">Services</a>
+                    <a href="" class="link">Contracts</a>
+                </div>
+            </nav>
+        </div>
         <div class="border"></div>
     </header>
 
-    <section class="container">
-        <div class="container-content">
-            <h2>Welcome to</h2>
-            <h1>Nordic Country</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, facilis sunt natus eos provident architecto nobis soluta dolorem voluptas optio dolor voluptatibus possimus dolore reiciendis. Repudiandae quasi ea voluptates odio!</p>
-
-            <a href="" class="btn-primary">Discover</a>
+    <section class="s-hero">
+        <div class="container">
+            <div class="s-hero-content" data-aos="fade-up">
+                <h2>Welcome to</h2>
+                <h1>Nordic Country</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, facilis sunt natus eos provident
+                    architecto nobis soluta dolorem voluptas optio dolor voluptatibus possimus dolore reiciendis.
+                    Repudiandae quasi ea voluptates odio!</p>
+                <a href="" class="btn-primary">Discover</a>
+            </div>
+            <div class="divider"></div>
         </div>
     </section>
 
     <script src="./src/js/svg-inject.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            delay: 100,
+        });
+    </script>
 </body>
+
 </html>

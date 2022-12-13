@@ -68,4 +68,10 @@ p {
     border-radius: 4px;
 
     margin-top: $gap-3;
+
+    transition: .8s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
