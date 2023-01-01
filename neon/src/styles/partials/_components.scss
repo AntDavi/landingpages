@@ -1,14 +1,13 @@
-.card-testimony {
+.card-depoimento {
     width: 100%;
-    max-width: 38.4rem;
-    background-color: $gray-1;
-    border-radius: 0.8rem;
-    padding: 3.2rem;
+    max-width: 38rem;
+    height: 20rem;
+    background-color: rgba(241, 240, 245, 0.55);
+    padding: 40px 32px 24px;
+    border-radius: 8px;
 
     .user {
         @include flex(row, center, space-between);
-        margin-bottom: 1.8rem;
-
         strong {
             display: block;
             font-family: 'Poppins', sans-serif;
@@ -22,9 +21,10 @@
 
     p {
         font-family: 'Inter', sans-serif;
-        font-weight: 400;
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         line-height: 150%;
         color: $gray-4;
+
+        margin-top: 24px;
     }
 }

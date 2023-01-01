@@ -1,15 +1,10 @@
-h1, h2, h3, h4 {
-    font-family: 'Poppins', sans-serif;
-    color: $gray-5;
-}
-
 h1 {
     font-weight: 600;
     font-size: 6.4rem;
 }
 
 h2 {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 4rem;
 }
 
@@ -32,3 +27,9 @@ h3, h4 {
     font-weight: 500;
     letter-spacing: -0.5px;
 }
+
+h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+    color: $gray-5;
+}
+
