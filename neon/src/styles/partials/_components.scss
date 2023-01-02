@@ -28,3 +28,26 @@
         margin-top: 24px;
     }
 }
+
+.vantagens {
+    display: flex;
+    align-items: center;
+
+    .icon {
+        width: 4.8rem;
+        height: 4.8rem;
+        @include flex(row, center, center);
+        border-radius: 50%;
+        background: linear-gradient(180deg, rgba(53, 203, 226, 0.4) 0%, rgba(53, 202, 226, 0) 100%);
+    }
+
+    span {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 1.2rem;
+        line-height: 2.2rem;
+        color: $white;
+        margin-left: 1.2rem;
+        font-size: 1.6rem;
+    }
+}
