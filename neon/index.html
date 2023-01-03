@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neon | A conta digital dos brasileiros</title>
 
+    <!-- Swiper -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
     <!-- CSS -->
     <link rel="stylesheet" href="./src/styles/style.css">
 
@@ -141,7 +145,7 @@
                                 <img src="./src/assets/img/icon-taxas.svg" alt="" class="icon">
                                 <div class="txt">
                                     <h3>
-                                        Sem taxas 
+                                        Sem taxas
                                     </h3>
                                     <p>
                                         Transferências, boletos de depósito e outros serviços gratuitos
@@ -192,6 +196,105 @@
             </div>
         </div>
     </section>
+
+    <section class="s-depoimento">
+        <div class="container">
+            <div class="top">
+                <h2>
+                    <span>
+                        Prático, fácil, moderno
+                    </span>
+                    Você resolve tudo sem estresse 😊
+                </h2>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="slide-depoimentos">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card-depoimento">
+                            <div class="user">
+                                <strong>@marciogurka</strong>
+                                <img src="./src/assets/img/icon-twiiter.svg" alt="">
+                            </div>
+                            <p>
+                                Valeu @banconenon! Linda embalagem e o cartão tbm é lindo! Muito amor por esse banco #bancoNeon
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-depoimento">
+                            <div class="user">
+                                <strong>@marciogurka</strong>
+                                <img src="./src/assets/img/icon-twiiter.svg" alt="">
+                            </div>
+                            <p>
+                                Valeu @banconenon! Linda embalagem e o cartão tbm é lindo! Muito amor por esse banco #bancoNeon
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-depoimento">
+                            <div class="user">
+                                <strong>@marciogurka</strong>
+                                <img src="./src/assets/img/icon-twiiter.svg" alt="">
+                            </div>
+                            <p>
+                                Valeu @banconenon! Linda embalagem e o cartão tbm é lindo! Muito amor por esse banco #bancoNeon
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-depoimento">
+                            <div class="user">
+                                <strong>@marciogurka</strong>
+                                <img src="./src/assets/img/icon-twiiter.svg" alt="">
+                            </div>
+                            <p>
+                                Valeu @banconenon! Linda embalagem e o cartão tbm é lindo! Muito amor por esse banco #bancoNeon
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-depoimento">
+                            <div class="user">
+                                <strong>@marciogurka</strong>
+                                <img src="./src/assets/img/icon-twiiter.svg" alt="">
+                            </div>
+                            <p>
+                                Valeu @banconenon! Linda embalagem e o cartão tbm é lindo! Muito amor por esse banco #bancoNeon
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-depoimento">
+                            <div class="user">
+                                <strong>@marciogurka</strong>
+                                <img src="./src/assets/img/icon-twiiter.svg" alt="">
+                            </div>
+                            <p>
+                                Valeu @banconenon! Linda embalagem e o cartão tbm é lindo! Muito amor por esse banco #bancoNeon
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".slide-depoimentos", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".s-depoimento .top .swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 
 </html>

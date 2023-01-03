@@ -277,3 +277,46 @@
         }
     }
 }
+
+.s-depoimento {
+    padding-top: 13.4rem;
+
+    .top {
+        margin-bottom: 4.8rem;
+        @include flex(row, flex-end, space-between);
+        h2 {
+            span {
+                color: $gray-2;
+                display: block;
+                margin-bottom: 1.4rem;
+            }
+        }
+        .swiper-pagination {
+            position: relative;
+            width: auto; 
+
+            .swiper-pagination-bullet {
+                background: $brand-yellow;
+                opacity: 0.3;
+                border-radius: 12px;
+
+                transition: all .3s ease;
+
+                &:not(:first-child) {
+                    margin-left: 4px;
+                }
+
+                &-active{
+                    opacity: 1;
+                    width: 17px;
+                    height: 7px;
+                }
+            }
+        }
+    }
+
+    .slide-depoimentos {
+        overflow: hidden;
+        
+    }
+}
