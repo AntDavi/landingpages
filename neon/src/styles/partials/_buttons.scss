@@ -93,3 +93,29 @@
         background-color: rgba(0, 164, 240, 0.9);
     }
 }
+
+
+@include responsive (600px) {
+    .btn-contato {
+        img {
+            display: none;
+        }
+        .info {
+            margin-left: 0;
+        }
+    }
+}
+
+@include responsive (480px) {
+    .btn-contato {
+        padding-left: 0;
+        justify-content: center;
+
+        .info {
+            p, strong {
+                text-align: center;
+                display: block;
+            }
+        }
+    }
+}
