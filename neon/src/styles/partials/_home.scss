@@ -1,15 +1,11 @@
 .s-hero {
     width: 100%;
     height: 78.6rem;
-
-    background-image: url('../assets/img/bg-hero.svg');
-    background-repeat: no-repeat;
-    background-position: center center;
-
+    background: url("../assets/img/bg-hero.svg") no-repeat center center;
     padding-top: 17.5rem;
 
     .container {
-        @include flex(row, flex-start, space-between)
+        @include flex(row, flex-start, space-between);
     }
 
     .s-hero-left {
@@ -17,61 +13,69 @@
         max-width: 68.4rem;
 
         h3 {
-            color: $white;
+            color: #ffffff;
             opacity: 0.8;
             font-weight: 600;
+            margin-bottom: 3.2rem;
         }
 
         h1 {
-            color: $white;
-            margin: 3.2rem 0;
+            color: #ffffff;
+            margin-bottom: 3.9rem;
         }
 
         ul {
+            width: 100%;
+            max-width: 62.1rem;
             margin-top: 6.4rem;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width: 100%;
-            max-width: 62.1rem;
+
+            li {
+                display: flex;
+                align-items: center;
+
+                .icon {
+                    width: 4.8rem;
+                    height: 4.8rem;
+                    background: linear-gradient(180deg, rgba(53, 203, 226, 0.4) 0%, rgba(53, 202, 226, 0) 100%);
+                    border-radius: 50%;
+                    @include flex(row, center, center);
+                    margin-right: 1.2rem;
+                }
+
+                span {
+                    font-weight: 400;
+                    font-size: 1.8rem;
+                    line-height: 2.2rem;
+                    color: #ffffff;
+                }
+            }
         }
     }
 
     .s-hero-right {
         width: 100%;
-        max-width: 76.0rem;
-        margin-right: -23rem;
+        max-width: 70.6rem;
+        margin-right: -17.4rem;
 
         h2 {
-            text-align: center;
             margin-bottom: 6.7rem;
-            color: $white;
+            text-align: center;
+            color: #ffffff;
             opacity: 0.4;
             font-weight: 600;
         }
 
         .image {
+            position: relative;
+            top: 3.5rem;
             width: 100%;
             height: 54.1rem;
-            top: 35px;
-            position: relative;
-            overflow: hidden;
 
             img {
                 position: absolute;
-            }
-
-            .circle {
-                top: 2.8rem;
-                right: 4.3rem;
-                max-width: 55.3rem;
-            }
-
-            .card-back {
-                bottom: 4.6rem;
-                right: 8.6rem;
-                z-index: 1;
-                max-width: 35.2rem;
             }
 
             .card-front {
@@ -79,23 +83,46 @@
                 left: 0;
                 z-index: 2;
                 max-width: 43.5rem;
+                animation: floating 6s infinite;
+            }
+
+            .card-back {
+                bottom: 4.6rem;
+                right: 8.6rem;
+                z-index: 1;
+                max-width: 35.2rem;
+                animation: floating 8s infinite;
+            }
+
+            .circle {
+                max-width: 55.3rem;
+                top: 2.8rem;
+                right: 4.3rem;
             }
         }
     }
 
-    @include responsive (1440px) {
+    @include responsive(1440px) {
         .s-hero-right {
             margin-right: -13.4rem;
         }
     }
-    @include responsive (1366px) {
+
+    @include responsive(1366px) {
         .s-hero-right {
             margin-right: -8rem;
+
+            .image {
+                .card-back {
+                    right: 4rem;
+                }
+            }
         }
     }
-    @include responsive (1050px) {
+
+    @include responsive(1050px) {
         padding-top: 14.5rem;
-        height: 65.5rem;
+        height: 65.6rem;
 
         .s-hero-left {
             ul {
@@ -112,107 +139,115 @@
 
             .image {
                 height: 45rem;
+
                 .card-front {
                     max-width: 35rem;
                     top: 8rem;
                 }
+
                 .card-back {
                     max-width: 29rem;
                     bottom: 0;
                 }
+
                 .circle {
                     max-width: 46rem;
                 }
             }
         }
     }
-    @include responsive (991px) {
+
+    @include responsive(991px) {
         height: 89.1rem;
         background-size: cover;
 
         .container {
             flex-direction: column;
             align-items: center;
+        }
 
-            .s-hero-left {
-                margin-bottom: 5rem;
-                width: 100%;
-                max-width: 68.5rem;
+        .s-hero-left {
+            margin-bottom: 5rem;
+            max-width: 68.5rem;
+            @include flex(column, center, center);
 
-                @include flex(column, center, center);
-
-                h3, h1 {
-                    text-align: center;
-                }
-
-                h1 {
-                    margin-bottom: 2.6rem;
-                }
-
-                ul {
-                    margin-top: 3.9rem;
-                }
+            h3 {
+                text-align: center;
             }
-            .s-hero-right {
-                h2 {
-                    margin-bottom: 1.9rem;
-                }
-                .image {
-                    max-width: 51.1rem;
-                    margin: 0 auto;
-                    height: 42.4rem;
+
+            h1 {
+                text-align: center;
+                margin-bottom: 2.6rem;
+            }
+
+            ul {
+                margin-top: 3.9rem;
+            }
+        }
+
+        .s-hero-right {
+            h2 {
+                margin-bottom: 1.9rem;
+            }
+
+            .image {
+                max-width: 51.1rem;
+                height: 42.4rem;
+                margin: 0 auto;
+                top: 0;
+
+                .circle {
+                    max-width: 42.9rem;
                     top: 0;
+                    right: 1.3rem;
+                }
 
-                    .circle {
-                        max-width: 43rem;
-                        top: 0;
-                        right: 1.3rem;
-                    }
+                .card-front {
+                    max-width: 34rem;
+                    left: 0;
+                    right: 3.5rem;
+                }
 
-                    .card-front {
-                        max-width: 34rem;
-                        left: 0;
-                        top: 3.5rem;
-                    }
-                    .card-back {
-                        max-width: 27.8rem;
-                        right: 2.9rem;
-                        bottom: 3.6rem;
-                    }
+                .card-back {
+                    max-width: 27.4rem;
                 }
             }
         }
     }
-    @include responsive (480px) {
-        padding-top: 12rem;
-        height: 80rem;
+
+    @include responsive(480px) {
+        padding-top: 12.4rem;
+        height: 73.9rem;
+
         .s-hero-left {
             h3 {
                 font-size: 1.6rem;
-                line-height: 116%;
-                margin-bottom: 1.9rem;
+                line-height: 120%;
+                margin-bottom: 1.5rem;
             }
+
             h1 {
-                font-size: 3.2rem;
+                font-size: 32px;
                 line-height: 112%;
-                margin-bottom: 3.8rem;
+                margin-bottom: 3.7rem;
             }
+
             ul {
                 flex-direction: column;
                 align-items: flex-start;
-                width: 100%;
                 max-width: 27.5rem;
 
                 li {
                     &:not(:last-child) {
                         margin-bottom: 1.7rem;
                     }
-                        
+
                     .icon {
                         width: 2rem;
                         height: auto;
                         background-color: transparent;
                     }
+
                     span {
                         br {
                             display: none;
@@ -221,6 +256,7 @@
                 }
             }
         }
+
         .s-hero-right {
             h2 {
                 display: none;
@@ -234,11 +270,12 @@
                     max-width: 26.7rem;
                     right: 0;
                 }
+
                 .card-front {
                     max-width: 21.1rem;
                     top: 2.9rem;
-
                 }
+
                 .card-back {
                     max-width: 17rem;
                     bottom: 0;
@@ -404,7 +441,7 @@
             width: 100%;
             height: 41rem;
             background-image: url(../assets/img/bg-box-card-neon.svg);
-            background-position: center center;
+            background-size: cover;
             background-repeat: no-repeat;
             border-radius: 1.2rem;
 
@@ -452,6 +489,214 @@
 
             .image {
                 margin-right: -3.2rem;
+            }
+        }
+    }
+
+    @include responsive (1200px) {
+        .s-card-neon-left {
+            .ilustra-mockup {
+                .circle {
+                    display: none;
+                }
+            }
+        }
+
+        .s-card-neon-right {
+            .main-text {
+                ul {
+                    li {
+                        .info {
+                            .txt {
+                                margin-left: 2rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .box-card {
+                padding-left: 3.5rem;
+
+                .image {
+                    margin-right: -1rem;
+                }
+            }
+        }
+    }
+
+    @include responsive (991px) {
+        .container {
+            flex-direction: column-reverse;
+        }
+
+        .s-card-neon-right {
+            max-width: 100%;
+            margin-bottom: 9.8rem;
+
+            .main-text {
+                margin-bottom: 5.7rem;
+
+                h2 {
+                    text-align: center;
+                    margin: 0 auto;
+                    margin-bottom: 5.3rem;
+                    font-size: 3.6rem;
+                }
+
+                .btn-link {
+                    display: block;
+                    text-align: center;
+
+
+
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+
+            .box-card {
+                max-width: 94.7%;
+
+                .image {
+                    margin-right: -4rem;
+                }
+            }
+        }
+
+        .s-card-neon-left {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 61rem;
+            margin: 0 auto;
+
+            .ilustra-mockup {
+                margin-bottom: 0;
+
+                max-width: 25.5rem;
+            }
+
+            .text {
+                max-width: 27rem;
+            }
+        }
+    }
+
+    @include responsive (680px) {
+        padding-top: 17rem;
+
+        .s-card-neon-right {
+            .box-card {
+                max-width: 100%;
+                height: 47rem;
+
+                flex-direction: column;
+
+                padding-top: 4.3rem;
+                padding-left: 0;
+                margin-bottom: 5rem;
+
+                .text {
+                    max-width: 90%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-bottom: 3rem;
+
+                    text-align: center;
+                }
+
+                .image {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    @include responsive(480px) {
+        // position: relative;
+        padding-top: 8.6rem;
+
+        .left-area {
+            flex-direction: column-reverse;
+
+            .text {
+                margin-bottom: 4rem;
+
+                .icon {
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+
+            .ilustra-mockup {
+                height: 39.7rem;
+                overflow: hidden;
+            }
+        }
+
+        .right-area {
+            margin-bottom: 6.7rem;
+
+            .main-text {
+                h2 {
+                    font-size: 2.8rem;
+                    margin-bottom: 3.7rem;
+                }
+
+                ul {
+                    li {
+                        padding: 2.8rem 0;
+
+                        .info {
+                            align-items: flex-start;
+                        }
+
+                        .txt {
+                            max-width: 71%;
+
+                            h3 {
+                                font-size: 2rem;
+                            }
+
+                            p {
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .box-card {
+                h2 {
+                    font-weight: 600;
+                    font-size: 2.8rem;
+                }
+
+                h3 {
+                    font-size: 2rem;
+                }
+
+                .text {
+                    p {
+                        max-width: 25.3rem;
+                        margin-bottom: 3.4rem;
+                    }
+
+                    .btns {
+                        .btn-primary {
+                            padding: 0 3rem;
+                        }
+                    }
+                }
+
+                .image {
+                    max-width: 27.7rem;
+                    
+                }
             }
         }
     }
@@ -706,6 +951,7 @@
                 li {
                     flex-direction: column;
                     align-items: center;
+
                     &:not(:last-child) {
                         margin-bottom: 5.6rem;
                     }
@@ -731,17 +977,19 @@
                 }
             }
         }
+
         .s-conta-right {
             max-width: 35.7rem;
             height: 46.9rem;
 
             img {
-                &.mockup-01{
+                &.mockup-01 {
                     max-width: 16.8rem;
                     bottom: initial;
                     top: 5.8rem;
                 }
-                &.mockup-02  {
+
+                &.mockup-02 {
                     max-width: 16.8rem;
                     left: initial;
                     right: 0;
