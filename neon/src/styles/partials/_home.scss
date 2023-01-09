@@ -2,6 +2,7 @@
     width: 100%;
     height: 78.6rem;
     background: url("../assets/img/bg-hero.svg") no-repeat center center;
+    background-size: cover;
     padding-top: 17.5rem;
 
     .container {
@@ -864,11 +865,13 @@
             &.mockup-01 {
                 left: 0;
                 bottom: 4.7rem;
+                animation: floating 6s infinite;
             }
 
             &.mockup-02 {
                 top: 0.3rem;
                 left: 25.8rem;
+                animation: floating 8s infinite;
             }
 
             &.circle {
