@@ -1,0 +1,41 @@
+header {
+    width: 100%;
+    height: 13rem;
+    display: flex;
+
+    border-bottom: 2px solid $white;
+
+    .container {
+        @include flex(row, center, space-between);
+
+        position: relative;
+
+        ul {
+            display: flex;
+            li {
+                &:not(:last-child) {
+                    margin-right: 30px;
+                }
+            }
+        }
+
+        .free {
+            position: absolute;
+            bottom: -15px;
+
+            background-color: $white;
+            padding: 0.8rem 1.6rem;
+            border-radius: 30px;
+
+            p {
+                color: $brand-red;
+                font-family: 'Montserrat';
+                font-weight: 700;
+                font-size: 1.3rem;
+                line-height: 16px;
+            }
+        }
+    }
+
+
+}
